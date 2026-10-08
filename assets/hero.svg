@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d2c4a"/>
+      <stop offset="0.55" stop-color="#16243f"/>
+      <stop offset="1" stop-color="#0e1830"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.62" cy="0.32" r="0.7">
+      <stop offset="0" stop-color="#c9a86a" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#b08d52" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#b08d52" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6c98a"/>
+      <stop offset="0.5" stop-color="#b08d52"/>
+      <stop offset="1" stop-color="#7d6236"/>
+    </linearGradient>
+    <linearGradient id="dress" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f1e4"/>
+      <stop offset="1" stop-color="#d9cba9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1600" fill="url(#bg)"/>
+  <rect width="1200" height="1600" fill="url(#glow)"/>
+
+  <!-- anillos decorativos -->
+  <g fill="none" stroke="#b08d52" stroke-opacity="0.35">
+    <circle cx="820" cy="520" r="240"/>
+    <circle cx="820" cy="520" r="330" stroke-opacity="0.2"/>
+    <circle cx="820" cy="520" r="430" stroke-opacity="0.12"/>
+  </g>
+
+  <!-- pañuelo ondulante -->
+  <path d="M300 430 C 520 340 720 470 900 380 C 760 520 560 560 380 520 Z" fill="#f7f1e4" opacity="0.18"/>
+
+  <!-- figura danzante (marinera) -->
+  <g transform="translate(600 0)">
+    <!-- cabello -->
+    <path d="M-70 300 C -120 420 -110 560 -60 600 L 70 600 C 120 540 110 400 70 300 Z" fill="#2a1c12"/>
+    <!-- cabeza -->
+    <circle cx="0" cy="300" r="62" fill="#e8c9a0"/>
+    <!-- cabello frontal -->
+    <path d="M-62 288 C -50 220 50 220 62 288 C 30 258 -30 258 -62 288 Z" fill="#2a1c12"/>
+    <!-- peineta -->
+    <path d="M-40 244 L40 244 L34 228 L-34 228 Z" fill="#b08d52"/>
+    <!-- torso/blusa -->
+    <path d="M-58 380 C -20 355 20 355 58 380 L 74 620 L -74 620 Z" fill="url(#dress)"/>
+    <!-- mangas -->
+    <path d="M-58 385 C -120 420 -160 500 -150 560 C -110 540 -80 480 -50 440 Z" fill="url(#dress)"/>
+    <path d="M58 385 C 120 420 160 500 150 560 C 110 540 80 480 50 440 Z" fill="url(#dress)"/>
+    <!-- brazos/manos -->
+    <path d="M-150 560 C -170 610 -180 660 -160 700" stroke="#e8c9a0" stroke-width="20" stroke-linecap="round" fill="none"/>
+    <path d="M150 560 C 175 600 190 650 175 695" stroke="#e8c9a0" stroke-width="20" stroke-linecap="round" fill="none"/>
+    <!-- pañuelo en mano -->
+    <path d="M175 695 C 250 690 330 720 400 690 C 340 770 250 780 185 740 Z" fill="#f7f1e4" opacity="0.92"/>
+    <!-- falda amplia -->
+    <path d="M-74 600 C -260 760 -300 1080 -240 1240 C -150 1290 150 1290 240 1240 C 300 1080 260 760 74 600 Z" fill="url(#skirt)"/>
+    <!-- pliegues -->
+    <g stroke="#7d6236" stroke-opacity="0.4" fill="none" stroke-width="3">
+      <path d="M0 620 C -20 800 -30 1050 -20 1240"/>
+      <path d="M-90 640 C -140 820 -170 1050 -150 1230"/>
+      <path d="M90 640 C 140 820 170 1050 150 1230"/>
+    </g>
+    <!-- pies -->
+    <ellipse cx="-110" cy="1280" rx="70" ry="30" fill="#e8c9a0"/>
+    <ellipse cx="70" cy="1300" rx="70" ry="30" fill="#e8c9a0"/>
+  </g>
+
+  <!-- textura de puntos -->
+  <g fill="#ffffff" fill-opacity="0.05">
+    <circle cx="150" cy="200" r="3"/><circle cx="980" cy="250" r="3"/><circle cx="1050" cy="900" r="3"/>
+    <circle cx="180" cy="1100" r="3"/><circle cx="300" cy="1450" r="3"/><circle cx="950" cy="1400" r="3"/>
+  </g>
+</svg>
